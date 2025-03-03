@@ -1,0 +1,99 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    background-image: url('../images/sticky.jpeg');
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Hace que ocupe el ancho completo */
+    text-align: center;
+}
+
+.sticky:hover {
+    opacity: 0.8; /* Efecto al pasar el mouse */
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra el contenido */
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 30px;
+    color: #ff6600; /* Naranja inspirado en Dragon Ball */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #cccccc; /* Texto gris claro */
+    margin-bottom: 30px;
+    padding: 0 20px; /* Añade un poco de padding en los lados */
+}
+
+/* Estilos para la imagen */
+img {
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border: 4px solid #ff6600; /* Borde naranja */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para los mapas de áreas */
+area {
+    cursor: pointer; /* Cambia el cursor al pasar sobre las áreas */
+}
+
+/* Estilos para los mensajes de alerta */
+script {
+    display: none; /* Oculta el script en la página */
+}
+
+/* Estilos para el fondo y efectos temáticos */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 102, 0, 0.1), rgba(26, 26, 26, 1)); /* Efecto de gradiente radial */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+/* Efecto hover para las áreas del mapa */
+area:hover {
+    opacity: 0.8; /* Reduce la opacidad al pasar el cursor */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del título en móviles */
+    }
+
+    p {
+        font-size: 1em; /* Reduce el tamaño del texto en móviles */
+    }
+
+    img {
+        width: 90%; /* Ajusta el ancho de la imagen en móviles */
+        height: auto; /* Mantiene la proporción */
+    }
+}
