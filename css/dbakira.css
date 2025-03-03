@@ -44,7 +44,8 @@ h2 {
     padding-left: 80px;
     font-size: 30px;
 }
-ul{
+
+ul {
     background-color: #333333;
     margin-right: 80px;
     margin-left: 80px;
@@ -53,7 +54,7 @@ ul{
     border: 4px solid #ff6600; /* Borde naranja */
     border-radius: 10px; /* Bordes redondeados */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: justify; 
+    text-align: justify;
 }
 
 p {
@@ -62,7 +63,7 @@ p {
     padding-left: 80px;
     padding-right: 80px;
     text-align: justify;
-    font-size:17px;
+    font-size: 17px;
 }
 
 /* Estilos para la foto de Akira Toriyama */
@@ -77,7 +78,6 @@ img {
     width: 200px; /* Tamaño fijo */
     height: auto; /* Mantiene la proporción */
 }
-
 
 /* Estilos para el iframe del mapa */
 iframe {
@@ -120,4 +120,78 @@ img:hover {
     transition: transform 0.3s ease;
 }
 
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    h1, h2 {
+        padding-left: 20px; /* Reducir el padding lateral */
+        padding-right: 20px;
+        font-size: 24px; /* Reducir el tamaño de la fuente */
+    }
 
+    h1 {
+        font-size: 28px; /* Reducir el tamaño de la fuente */
+    }
+
+    h2 {
+        font-size: 22px; /* Reducir el tamaño de la fuente */
+    }
+
+    p {
+        padding-left: 20px; /* Reducir el padding lateral */
+        padding-right: 20px;
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+
+    ul {
+        margin-left: 20px; /* Reducir el margen lateral */
+        margin-right: 20px;
+        padding-right: 10px; /* Reducir el padding lateral */
+    }
+
+    img {
+        width: 150px; /* Reducir el tamaño de la imagen */
+        margin-right: 10px; /* Reducir el margen derecho */
+    }
+
+    iframe {
+        height: 300px; /* Reducir la altura del iframe */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (ej. smartphones pequeños) */
+@media (max-width: 480px) {
+    h1, h2 {
+        padding-left: 10px; /* Reducir aún más el padding */
+        padding-right: 10px;
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir el tamaño de la fuente */
+    }
+
+    h2 {
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+
+    p {
+        padding-left: 10px; /* Reducir aún más el padding */
+        padding-right: 10px;
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+
+    ul {
+        margin-left: 10px; /* Reducir el margen lateral */
+        margin-right: 10px;
+        padding-right: 5px; /* Reducir el padding lateral */
+    }
+
+    img {
+        width: 100px; /* Reducir aún más el tamaño de la imagen */
+        margin-right: 5px; /* Reducir el margen derecho */
+    }
+
+    iframe {
+        height: 200px; /* Reducir aún más la altura del iframe */
+    }
+}

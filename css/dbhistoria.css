@@ -38,7 +38,6 @@ body::before {
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
 
-
 h1, h2 {
     font-size: 30px;
     color: #ff6600; /* Naranja inspirado en la ropa de Goku */
@@ -80,7 +79,7 @@ ol, ul {
 
 li {
     margin-bottom: 10px;
-    color:white;
+    color: white;
 }
 
 /* Estilos para textos resaltados */
@@ -132,13 +131,11 @@ span[style*="color: pink"] {
 
 /* Estilos para la tabla */
 table {
-    
     border-collapse: collapse;
     margin: 20px 0;
     background-color: #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    
 }
 
 th, td {
@@ -183,4 +180,77 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    h1, h2 {
+        padding-left: 20px; /* Reducir el padding lateral */
+        padding-right: 20px;
+        font-size: 24px; /* Reducir el tamaño de la fuente */
+    }
+
+    h1 {
+        font-size: 28px; /* Reducir el tamaño de la fuente */
+    }
+
+    h2 {
+        font-size: 22px; /* Reducir el tamaño de la fuente */
+    }
+
+    p {
+        padding-left: 20px; /* Reducir el padding lateral */
+        padding-right: 20px;
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+
+    ol, ul {
+        padding-left: 20px; /* Reducir el padding lateral */
+        padding-right: 20px;
+    }
+
+    table {
+        width: 100%; /* Hacer la tabla responsive */
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 8px; /* Reducir el padding */
+    }
+
+    video, iframe {
+        width: 100%; /* Hacer los videos responsive */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (ej. smartphones pequeños) */
+@media (max-width: 480px) {
+    h1, h2 {
+        padding-left: 10px; /* Reducir aún más el padding */
+        padding-right: 10px;
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir el tamaño de la fuente */
+    }
+
+    h2 {
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+
+    p {
+        padding-left: 10px; /* Reducir aún más el padding */
+        padding-right: 10px;
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+
+    table {
+        font-size: 12px; /* Reducir el tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 6px; /* Reducir el padding */
+    }
 }
