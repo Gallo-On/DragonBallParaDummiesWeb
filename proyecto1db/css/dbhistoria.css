@@ -13,6 +13,11 @@
     width: 100%; /* Hace que ocupe el ancho completo */
     text-align: center;
 }
+
+.sticky:hover {
+    opacity: 0.8; /* Efecto al pasar el mouse */
+}
+
 body {
     font-size: 20px;
     font-family: 'Arial', sans-serif;

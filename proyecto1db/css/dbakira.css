@@ -11,6 +11,11 @@
     cursor: pointer;
     width: 100%; /* Hace que ocupe el ancho completo */
 }
+
+.sticky:hover {
+    opacity: 0.8; /* Efecto al pasar el mouse */
+}
+
 /* Estilos generales */
 body {
     font-size: 17px;

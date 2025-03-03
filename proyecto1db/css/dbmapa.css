@@ -13,6 +13,11 @@
     text-align: center;
 }
 
+.sticky:hover {
+    opacity: 0.8; /* Efecto al pasar el mouse */
+}
+
+
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;

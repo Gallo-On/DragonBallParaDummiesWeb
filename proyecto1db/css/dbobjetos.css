@@ -1,10 +1,10 @@
 h1 {
     text-align: center;
+    color: white;
 }
 
 body {
     background-position: center; /* Asegura que el fondo se mantenga centrado */
-    
     font-family: Arial, sans-serif;
     background-image: url('../images/naranja.jpg');
     background-size:cover;
@@ -32,7 +32,7 @@ body {
 
 
 .item {
-    background-color: rgba(0, 0, 255, 0.2); /* Color de fondo azul claro */
+    background-color: rgba(0, 0, 255, 0.2);
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -40,10 +40,15 @@ body {
     max-width: 800px; /* Limita el ancho del recuadro */
     color: white;
 }
+.item audio {
+    
+    max-width: 100%; /* Evita que se desborde */
+    margin: 10px 0; /* Añade un margen para separarlo del contenido */
+}
 
 .item img {
     max-width: 100%;
-    height: 180px; /* Ajusta la altura solo de las imágenes dentro de .item */
+    height: 180px; 
     border-radius: 8px;
     display: block;
     margin: 0 auto;
