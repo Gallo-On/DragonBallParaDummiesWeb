@@ -1,0 +1,70 @@
+/* Hace que el contenedor ocupe toda la pantalla */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-image: url('../images/sticky.jpeg');
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Hace que ocupe el ancho completo */
+    text-align: center;
+}
+
+section {
+    display: flex;
+    width: 100vw; /* Ancho completo */
+    height: 85vh; /* Altura completa */
+    overflow: hidden; /* Evita scroll */
+}
+body{
+    background-color: #222;
+}
+/* Contenedor de la imagen y el texto */
+.image-container {
+    position: relative;
+    width: 0px;
+    flex-grow: 1;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+/* Imágenes */
+.image-container img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+/* Efecto hover en imagen */
+.image-container:hover {
+    flex-grow: 2;
+}
+
+/* Texto oculto por defecto */
+.text {
+    position: absolute;
+    bottom: 10%; /* Ajusta la posición del texto */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease;
+}
+
+/* Mostrar el texto al pasar el cursor */
+.image-container:hover .text {
+    opacity: 1;
+}
