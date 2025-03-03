@@ -7,7 +7,7 @@ body {
 }
 
 #pp {
-    background-image: url('../images/db1.webp');
+    background-image: url('../images/db1.webp'); /* Imagen de fondo */
     background-size: cover;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 255, 255);
@@ -38,7 +38,7 @@ header {
     background-color: #222;
     padding: 20px;
     text-align: center;
-    background-image: url('../images/db2f.jpeg');
+    background-image: url('../images/db2f.jpeg'); /* Imagen de fondo del header */
     background-size: cover;
 }
 
