@@ -90,6 +90,7 @@ footer a:hover {
         padding-right: 20px;
         column-count: 2; /* Cambiar a una sola columna */
         font-size: 18px; /* Reducir el tamaño de la fuente */
+        background-size: 50%;
     }
 
     h2 {
