@@ -62,8 +62,8 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    background-color: red;
-    border-radius: 5px;
+    background-color:rgb(234, 139, 14);
+    border-radius: 10px;
 }
 
 footer {
@@ -90,6 +90,7 @@ footer a:hover {
         padding-right: 20px;
         column-count: 1; /* Cambiar a una sola columna */
         font-size: 18px; /* Reducir el tamaño de la fuente */
+        
     }
 
     h2 {
@@ -98,11 +99,12 @@ footer a:hover {
 
     nav ul {
      /* Cambiar a disposición vertical */
-        gap: 15px; /* Reducir el espacio entre elementos */
+        gap: 8px; /* Reducir el espacio entre elementos */
+
     }
 
     nav a {
-        padding: 8px; /* Reducir el padding */
+        padding: 6px; /* Reducir el padding */
         font-size: 16px; /* Reducir el tamaño de la fuente */
     }
 
@@ -124,8 +126,8 @@ footer a:hover {
     #pp {
         padding-left: 10px; /* Reducir aún más el padding */
         padding-right: 10px;
-        column-count: 1;
         font-size: 16px; /* Reducir el tamaño de la fuente */
+        column-count: 1;
     }
 
     h2 {
@@ -134,7 +136,7 @@ footer a:hover {
 
     nav a {
         padding: 6px; /* Reducir el padding */
-        font-size: 14px; /* Reducir el tamaño de la fuente */
+        font-size: 12px;/* Reducir el tamaño de la fuente */
     }
 
     header {
